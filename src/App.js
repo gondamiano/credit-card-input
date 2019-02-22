@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Input from './helpers/input.js';
+import ExpirationInput from './helpers/expirationInput.js';
 
 class App extends Component {
   render() {
@@ -8,9 +10,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <Input name="gonza" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
+          <ExpirationInput />
           <a
             className="App-link"
             href="https://reactjs.org"

@@ -1,0 +1,18 @@
+.input {
+	font-size: 25px;
+	text-align: center;
+	width: 400px;
+}
+
+.errorContainer {
+	border: 5px solid;
+	padding: 2px;
+	border-color: rgb(200, 0 , 0);
+}
+
+.LogoImg {
+	position: absolute;
+	height: 1.5em;
+	margin-top: 4px;
+	margin-left: 4px;
+}
