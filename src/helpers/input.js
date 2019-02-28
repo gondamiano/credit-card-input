@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './input.css';
 import validateCard from './ValidateCard.js';
+import CcvInput from './ccvInput.js';
 import logo from '../utils/cardsLogo';
 
 import {
@@ -53,7 +54,23 @@ class Input extends Component {
 	}
 
 	render() {
+		const ccvlength = this.state.cardType.cvvLength;
+
+		if(ccvlength)
 		return (
+			<div className="container">
+			<img src={this.state.logoSource} alt="asd" className="LogoImg" />
+				<input type="text" className="input"
+				 placeholder="Number Card"
+				 value={this.state.cardNumber}
+				 onChange={e => this.inputHandler(e.target.value)}
+				 onKeyPress={this.checkCardType}>
+				</input>
+				<CcvInput length={ccvlength} />
+			</div>
+		)
+
+		else return (
 			<div className="container">
 			<img src={this.state.logoSource} alt="asd" className="LogoImg" />
 				<input type="text" className="input"

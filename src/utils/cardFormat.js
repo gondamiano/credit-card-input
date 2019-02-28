@@ -4,35 +4,35 @@ export const CARD_TYPE = [
 		format: /(\d{1,4})/g,
 		pattern: /^4/,
 		maxCardLength: 16,
-		cvcLength: 3
+		cvvLength: 3
 	},
 	{
 		type: 'mastercard',
 		format: /(\d{1,4})/g,
 		pattern: /^(5[1-5]|677189)|^(222[1-9]|2[3-6]\d{2}|27[0-1]\d|2720)/,
 		maxCardLength: 16,
-		cvcLength: 3
+		cvvLength: 3
 	},
 	{
 		type: 'maestro',
 		format: /(\d{1,4})/g,
 		pattern: /^(5018|5020|5038|6304|6703|6708|6759|676[1-3])/,
 		maxCardLength: 19,
-		cvcLength: 3
+		cvvLength: 3
 	},
 	{
 		type: 'visaelectron',
 		format: /(\d{1,4})/g,
 		pattern: /^4(026|17500|405|508|844|91[37])/,
 		maxCardLength: 16,
-		cvcLength: 3
+		cvvLength: 3
 	},
 	{
 		type: 'americanexpress',
 		format: /(\d{1,4})(\d{1,6})?(\d{1,5})?/,
 		pattern: /^3[47]/,
 		maxCardLength: 15,
-		cvcLength: 4
+		cvvLength: 4
 	}
 ]
 
